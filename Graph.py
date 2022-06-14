@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 def show(address):
     lines = Parsing.parse(address)
-    t = np.arange(0, 597, 1)
+    t = np.arange(0, len(lines), 1)
     plt.ylabel('mV')
     plt.xlabel('Номер снятия отсчета')
     plt.plot(t, lines)
